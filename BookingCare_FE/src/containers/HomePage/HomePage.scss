@@ -68,7 +68,11 @@
                 }
 
                 &.section-medical-facility {
-                    background-image: url('../../assets/medical-fac/ND2.jpg');
+                    // background-image: url('../../assets/medical-fac/ND2.jpg');
+                    background-size: contain;
+                    background-color: white;
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
                 }
 
                 &.section-outstanding-doctor {
@@ -87,7 +91,7 @@
 }
 
 .section-share {
-    height: 330px;
+    height: 350px;
 
     .section-container {
         margin: 0 100px;
