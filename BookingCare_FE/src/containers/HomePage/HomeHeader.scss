@@ -1,0 +1,205 @@
+.home-header-container {
+    height: 60px;
+    width: 100%;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 100;
+
+    .home-header-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        .left-content {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: 25px;
+                color: gray;
+                cursor: pointer;
+            }
+
+            .header-logo {
+                height: 100%;
+                width: 42%;
+                cursor: pointer;
+                transform: scale(0.8, 0.8);
+                margin-left: -7px;
+            }
+        }
+
+        .center-content {
+            width: 55%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .child-content {
+
+                .subs-title {
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .right-content {
+            width: 25%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .support {
+                margin-right: 50px;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+
+                i {
+                    font-size: 15px;
+                    margin-right: 5px;
+                }
+            }
+
+            .language-VN {
+                margin-right: 7px;
+                cursor: pointer;
+                opacity: 0.4;
+
+                &:hover {
+                    color: orange;
+                }
+
+                &.active {
+                    opacity: 1;
+                    color: orange;
+                }
+            }
+
+            .language-EN {
+                margin: 0 10px;
+                cursor: pointer;
+                opacity: 0.4;
+
+                &:hover {
+                    color: rgb(10, 113, 197);
+                }
+
+                &.active {
+                    opacity: 1;
+                    color: rgb(10, 113, 197);
+                }
+            }
+        }
+    }
+}
+
+.home-header-banner {
+    background: url('../../assets/bg-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.85;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+
+    .content-up {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.1));
+        height: 65%;
+        padding-top: 15px;
+
+        .title1 {
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            text-shadow: 1px 1px 1px #333;
+            margin-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        .title2 {
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            text-shadow: 1px 1px 1px #333;
+            margin-bottom: 15px;
+        }
+
+        .search {
+            text-align: center;
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            padding: 10px;
+            border-radius: 25px;
+            background-color: #f7d800;
+
+            i {
+                margin: 0 5px;
+            }
+
+            input {
+                height: 30px;
+                width: 360px;
+                background: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    .content-down {
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 10px;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+
+        .options {
+            display: flex;
+            text-align: center;
+            gap: 50px;
+            justify-content: center;
+
+            .option-child {
+                width: 135px;
+                padding: 5px 10px;
+
+                .icon-child {
+                    background: white;
+                    width: 70px;
+                    height: 70px;
+                    padding: 17px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    text-align: center;
+
+                    i {
+                        font-size: 30px;
+                        color: #49bce2;
+                    }
+                }
+
+                .text-child {
+                    font-size: 20px;
+                    font-weight: 500;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #49bce2;
+                    }
+                }
+            }
+        }
+    }
+}
